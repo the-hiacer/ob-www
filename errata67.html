@@ -150,6 +150,30 @@ Both can be tricked into amplifying an incoming query.
 A source code patch exists which remedies this problem.</a>
 <p>
 
+<li id="p006_smtpd_sockaddr">
+<strong>006: SECURITY FIX: May 25, 2020</strong>
+&nbsp; <i>All architectures</i>
+<br>
+Incorrect use of getpeername(2) storage for outgoing IPv6 connections
+corrupts stack memory. The nature of the corruption and existing
+mitigations appear to make this difficult to effectively target.
+<br>
+<a href="https://ftp.openbsd.org/pub/OpenBSD/patches/6.7/common/006_smtpd_sockaddr.patch.sig">
+A source code patch exists which remedies this problem.</a>
+<p>
+
+<li id="p007_perl">
+<strong>007: SECURITY FIX: June 1, 2020</strong>
+&nbsp; <i>All architectures</i>
+<br>
+Several problems in Perl's regular expression compiler could lead to
+corruption of the intermediate language state of a compiled regular
+expression.
+<br>
+<a href="https://ftp.openbsd.org/pub/OpenBSD/patches/6.7/common/007_perl.patch.sig">
+A source code patch exists which remedies this problem.</a>
+<p>
+
 </ul>
 
 <hr>
